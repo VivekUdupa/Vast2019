@@ -12,9 +12,8 @@
 \author{Vivek Koodli Udupa}
 \date{\today}
 
-
 \begin{document}
-
+\pagenumbering{arabic}
 \maketitle
 
 % Introduction
@@ -63,18 +62,30 @@ Figure \ref{fig:shakemap} shows where the earthquake's epicenter originates as w
 	\end{minipage}
 \end{figure} 
 
-It can be noted that the cities 3, 4, 7 and 12 are the ones that are experiencing the maximum shake among all the cities. On the given scale, they are experiencing Moderate(\Romannum{4}) shake. 
+Based on preliminary visual comparison, it can be noted that the cities Old Town (location Id: 3), Safe Town (location Id: 4), Wilson Forest (location Id: 7) and Pepper Mill (location Id: 12) are the ones that are experiencing the maximum shake among all the cities. On the given scale, they are experiencing Moderate(\Romannum{4}) shake. 
 	
 \subsection{Prioritizing Neighborhood Response:}
-During a Calamity, the foremost concern is to keep the casualties to a minimum. This means deploying immediate medical assistance to disaster struck areas. It is important to note that hospitals are located only in selected cities. This can be observed in Figure \ref{fig:map}.    
+During a Calamity, the foremost concern is to keep the casualties to a minimum. This means deploying immediate medical assistance to disaster struck areas. There are a total of 7 hospitals spread across St. Himark as shown in Figure \ref{fig:map}.  \\
 
-%During a Calamity, the foremost concern is to keep the casualties as low as possible, which indirectly translates to efficient and fast transportation of the injured from the disaster struck areas to the nearest hospitals. For this kind of rescue operation, the hospitals must be properly equipped to perform first aid and emergency treatments and must be intact. Given the earthquake situation, it is important to keep track of the damages sustained by the hospitals. 
+Figure \ref{fig:medical} shows the damage hospitals sustained in different localities. As expected, the hospital at Old Town (location Id: 3) is the one with maximum reported damage. The emergency responders probably have to divert all possible injured to Downtown (location Id: 6) which has sustained about half the medical building damage as compared to Old Town.  \\
+
+Transporting injured to different locations comes at the cost of Time. It is only possible to transport the minorly injured to farther locations. This transportation can work only if the roads and bridges are intact. Let us take a look at the damages the Roads have taken at different location.  \\
+
+Figure \ref{fig:road} represents the average reported damage roads and bridges sustained during the earthquake. It is to be noted that the graph peaks at Location 8, Scenic Vista, which was safe from the earthquake according to the shake map. However, Old town has sustained an average reported damage of 7.26 out of 10, which is quiet a lot. This could cause major delays in transporting people out of Old Town. Relocating only the non-fatal injuries might be a good idea. Safe Town (location 4) is another major concern. It does not have its own hospital and the average road damage is reported at 4.21. This is not the worst, but certain roads might be inaccessible. Proper communication between the emergency response team can reduce the transportation time. The nearest hospitals to Safe Town are located at Terrapin Springs (location 11), Broadview (location 9) and Southton (location 16). \\ 
+
 
 \begin{figure}[H]
 \centering
-	\includegraphics[width =\linewidth]{Images/medical.png}
+	\includegraphics[width=\linewidth]{Images/medical.png}
 	\caption{Location Vs Reported Medical Building Damage }
 	\label{fig:medical}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\linewidth]{Images/Road.png}
+	\caption{Location Vs Reported Roads and Bridges Damage }
+	\label{fig:road}
 \end{figure}
  
  \newpage
