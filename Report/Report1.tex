@@ -39,7 +39,7 @@ The tasks of the MC1 are split into two parts: \\
 
 \begin{enumerate}[itemsep=0mm]
 	\item How to prioritize neighborhood for response?
-	\item Which parts of the city have taken the most damage?
+	\item Which parts of the community have taken the most damage?
 \end{enumerate}
 \noindent
 As described in the Introduction, the community is encoded into location ID's that range from 1 to 19.  \\
@@ -69,7 +69,7 @@ During a Calamity, the foremost concern is to keep the casualties to a minimum. 
 
 Figure \ref{fig:medical} shows the damage hospitals sustained in different localities. As expected, the hospital at Old Town (location Id: 3) is the one with maximum reported damage. The emergency responders probably have to divert all possible injured to Downtown (location Id: 6) which has sustained about half the medical building damage as compared to Old Town.  \\
 
-Transporting injured to different locations comes at the cost of Time. It is only possible to transport the minorly injured to farther locations. This transportation can work only if the roads and bridges are intact. Let us take a look at the damages the Roads have taken at different location.  \\
+Transporting injured to different locations comes at the cost of Time. It is only possible to transport the minorly injured to farther locations. This transportation can work only if the roads and bridges are intact. Let us take a look at the damages the roads have taken at different location.  \\
 
 Figure \ref{fig:road} represents the average reported damage roads and bridges sustained during the earthquake. It is to be noted that the graph peaks at Location 8, Scenic Vista, which was safe from the earthquake according to the shake map. However, Old town has sustained an average reported damage of 7.26 out of 10, which is quiet a lot. This could cause major delays in transporting people out of Old Town. Relocating only the non-fatal injuries might be a good idea. Safe Town (location 4) is another major concern. It does not have its own hospital and the average road damage is reported at 4.21. This is not the worst, but certain roads might be inaccessible. Proper communication between the emergency response team can reduce the transportation time. The nearest hospitals to Safe Town are located at Terrapin Springs (location 11), Broadview (location 9) and Southton (location 16). \\ 
 
@@ -88,10 +88,67 @@ Figure \ref{fig:road} represents the average reported damage roads and bridges s
 	\label{fig:road}
 \end{figure}
  
+ 
+ \subsection{Damages to the community:}
+ \label{subsec:damage}
+ Even though the North-Eastern side of the community was hit directly by the earthquake, the entire community is facing the consequences. Even the Cities farthest from the earthquake\rq{}s epicenter took considerable amount of damage. 
+ 
+\begin{figure}[H]
+\centering
+	\includegraphics[height=0.43\linewidth, width=\linewidth]{Images/AllDamage.png}
+	\caption{Collective damage to different locations in the Community}
+	\label{fig:alldamage}
+\end{figure}
+ 
+ Figure \ref{fig:alldamage} shows the collective damage reported from different locations in the community. Again, to no surprise, Old Town (location 3) has taken the overall highest damage. Broadview (location 9) takes the second place, even though it resides quiet further away in the earthquake\rq{}s shake map (Figure \ref{fig:shakemap}). 
+
+\begin{figure}[H]
+\centering
+	\includegraphics[height=75mm, width = 0.8\linewidth]{Images/ShakeInt.png}
+	\caption{Median of Shake Intensity at different Locations}
+	\label{fig:shakeint}
+\end{figure}
+
+Figure \ref{fig:shakeint} shows the median of the shake intensities experienced at different locations. This graph gives us an idea of how much each cities experienced the earthquake compared to its neighbors. Locations 3, 4, 7 and 12 took a direct hit, thus they peak the graph. Locations 14 and 18 takes the second place as expected. 
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\linewidth]{Images/AllSeperate.png}
+	\caption{Damages to different aspects of the city}
+	\label{fig:allseperate}
+\end{figure}
+
+Figure \ref{fig:allseperate} helps us to compare the damages to different aspects of the city with its neighbors.  It appears that power systems have taken the maximum damage in majority of the cities. It can also be noted that Location 7, Wilson Forest has minimum damage to everything except roads and power. This could mean that the location has less human population thus the need for hospitals and other buildings are scarce. \\
+
+This is an important observation because, till now, all the analysis was done based on the assumption that the population on all the cities were almost the same. But this may not be the case. Also, the number of reports from different cities registered were not taken into consideration. This may cause inaccuracies in the conclusions drawn form the raw damage reports taken from the RUMBLE application. 
+
  \newpage
 \begin{centering}
 	\section{Conclusion}
 \end{centering}
+
+Based on the visualizations of the damages caused to the medical facilities and roads, it seems appropriate to deploy medical help to Safe Town and Old Town as soon as possible. Safe Town being deprived of its own hospital, needs the injured to be transported to the closest medical facility whereas Old Town may have problems dealing with the injured as the hospitals may have taken severe damage due to the earthquake. \\
+
+These conclusions are drawn on the assumption that all cities have equal reports registered. But as seen in section \ref{subsec:damage}, there might be an imbalance in the reports registered. 
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\linewidth]{Images/RecordPercentile.png}
+	\caption{Compression of number of damage reports registered from different locations}
+	\label{fig:regrecords}
+\end{figure}
+
+Figure \ref{fig:regrecords} shows the number of reports registered from different locations. Out of the total 83,070 registered damage reports, 13,889 comes from location 8 and 13,535 comes from location 3. This contributes to around 16.72\% and 16.29\% of the total reports. Compared to these, location 7 with only 173 reports, contributes only a mere 0.21\%. \\
+
+This irregularity in the reports could be the reason for the unexpected results in Figure \ref{fig:road}. This result brings an important question to light. \\
+
+\noindent
+\textbf{How reliable are the damages reports recorded by the citizens of St.Himark? } \\
+
+\noindent
+This problem will be addressed in the Part 2 of the MiniChallenge 1. 
+
+
 
 
 
