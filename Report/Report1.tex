@@ -46,6 +46,7 @@ As described in the Introduction, the community is encoded into location ID's th
 Figure \ref{fig:map} represents the map of St.Himark highlighting different cities along with their respective location codes. \\
 Figure \ref{fig:shakemap} shows where the earthquake's epicenter originates as well as the intensity of shake felt across different locations. 
 
+%Plot of Maps
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{0.5\textwidth}
@@ -74,6 +75,7 @@ Transporting injured to different locations comes at the cost of Time. It is onl
 Figure \ref{fig:road} represents the average reported damage roads and bridges sustained during the earthquake. It is to be noted that the graph peaks at Location 8, Scenic Vista, which was safe from the earthquake according to the shake map. However, Old town has sustained an average reported damage of 7.26 out of 10, which is quiet a lot. This could cause major delays in transporting people out of Old Town. Relocating only the non-fatal injuries might be a good idea. Safe Town (location 4) is another major concern. It does not have its own hospital and the average road damage is reported at 4.21. This is not the worst, but certain roads might be inaccessible. Proper communication between the emergency response team can reduce the transportation time. The nearest hospitals to Safe Town are located at Terrapin Springs (location 11), Broadview (location 9) and Southton (location 16). \\ 
 
 
+%Medical Damage Image
 \begin{figure}[H]
 \centering
 	\includegraphics[width=\linewidth]{Images/medical.png}
@@ -81,6 +83,7 @@ Figure \ref{fig:road} represents the average reported damage roads and bridges s
 	\label{fig:medical}
 \end{figure}
 
+%Road Damage image
 \begin{figure}[H]
 \centering
 	\includegraphics[width=\linewidth]{Images/Road.png}
@@ -88,11 +91,21 @@ Figure \ref{fig:road} represents the average reported damage roads and bridges s
 	\label{fig:road}
 \end{figure}
  
+ %Medical and Road images combined
+ \begin{figure}[H]
+\centering
+	\includegraphics[width=\linewidth]{Images/MedRoad.png}
+	\caption{Reported damages to Roads and Medical facilities at different locations of St. Himark }
+	\label{fig:medroad}
+\end{figure}
+ 
+ Figure \ref{fig:medroad} shows the reported damages of Roads and Medical Facilities next to each other. This plot is helpful in scouting out the fastest route to transport the injured from Old Town (Location Id: 3) and Safe Town (Location Id: 4), as these two have taken severe damage. 
  
  \subsection{Damages to the community:}
  \label{subsec:damage}
  Even though the North-Eastern side of the community was hit directly by the earthquake, the entire community is facing the consequences. Even the Cities farthest from the earthquake\rq{}s epicenter took considerable amount of damage. 
  
+ %All damage Aggregate Image
 \begin{figure}[H]
 \centering
 	\includegraphics[height=0.43\linewidth, width=\linewidth]{Images/AllDamage.png}
@@ -102,6 +115,7 @@ Figure \ref{fig:road} represents the average reported damage roads and bridges s
  
  Figure \ref{fig:alldamage} shows the collective damage reported from different locations in the community. Again, to no surprise, Old Town (location 3) has taken the overall highest damage. Broadview (location 9) takes the second place, even though it resides quiet further away in the earthquake\rq{}s shake map (Figure \ref{fig:shakemap}). 
 
+%Shake intensity Image
 \begin{figure}[H]
 \centering
 	\includegraphics[height=75mm, width = 0.8\linewidth]{Images/ShakeInt.png}
@@ -111,6 +125,7 @@ Figure \ref{fig:road} represents the average reported damage roads and bridges s
 
 Figure \ref{fig:shakeint} shows the median of the shake intensities experienced at different locations. This graph gives us an idea of how much each cities experienced the earthquake compared to its neighbors. Locations 3, 4, 7 and 12 took a direct hit, thus they peak the graph. Locations 14 and 18 takes the second place as expected. 
 
+%All damage Image
 \begin{figure}[H]
 \centering
 	\includegraphics[width=\linewidth]{Images/AllSeperate.png}
