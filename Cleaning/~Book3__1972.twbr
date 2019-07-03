@@ -1409,7 +1409,7 @@
                 </tuple-reference>
               </visual-coordinate>
             </point>
-            <body x='197' y='-72' />
+            <body x='124' y='-88' />
           </annotation>
           <annotation class='point' id='3' mark-position='1' pullback='12' text-width='115'>
             <formatted-text>
@@ -2653,7 +2653,7 @@
       </cards>
       <simple-id uuid='{9AC6370A-8C18-44C7-B237-96CBDF54AA87}' />
     </window>
-    <window class='worksheet' name='MedRoad'>
+    <window class='worksheet' maximized='true' name='MedRoad'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2780,7 +2780,7 @@
       </cards>
       <simple-id uuid='{A2CEE4A0-3725-46E5-92CC-D4F5854A2047}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 21'>
+    <window class='worksheet' name='Sheet 21'>
       <cards>
         <edge name='left'>
           <strip size='160'>
